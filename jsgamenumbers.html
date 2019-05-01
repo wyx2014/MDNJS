@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Numbers</title>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<button>Start machine</button>
+<p>The machine is stopped.</p>
+<script>
+    var myInt=3;
+    var myFloat=3.67;
+    console.log(typeof myInt);
+    console.log(typeof myFloat);
+    console.log(myFloat+myInt);
+    myInt++;
+    ++myFloat
+    console.log(myInt);
+    console.log(myFloat);
+    var canvas=document.querySelector('#canvas');
+    var ctx = canvas.getContext('2d');
+    var x=100;
+    var y=50;
+    ctx.fillStyle = 'green';
+    ctx.fillRect(10, 10, x, (x+y)/2);
+
+    var btn=document.querySelector('button');
+    var p=document.querySelector('p');
+
+    function changestatus() {
+        if(btn.textContent==='Start machine'){
+            btn.textContent ='Stop machine';
+            p.textContent='The machine is started.';
+        }else if(btn.textContent==='Stop machine'){
+            btn.textContent ='Start machine';
+            p.textContent='The machine is stopped.';
+        }
+    }
+
+    btn.addEventListener('click',changestatus);
+
+</script>
+</body>
+</html>

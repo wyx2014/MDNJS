@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string</title>
+</head>
+<body>
+<a href="https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/First_steps/Strings">Strings</a>
+<script>
+
+    // 转义字符串中的字符
+    // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String
+    var bigmouth='\' we are \nxtc\'';
+    console.log(bigmouth);
+    // 连接字符串
+    var partyName='alex'
+    var partyLocation ='xx';
+    var partyTime='20190430';
+    var partyInfo=partyName+partyLocation+partyTime;
+    console.log(partyInfo);
+    // number 和string 转换
+    var age=12;
+    age = age.toString();
+    console.log(typeof age);
+    var age1=12;
+    age1 = String(age1);
+    console.log(typeof age1);
+    var age2='12';
+    var age3='12';
+    age2 = Number(age2);
+    var age4= age3+12;
+    console.log(typeof age2);
+    console.log(typeof age4 +age4);
+    // 把字符串当作对象
+    var string = 'This is my string';
+    console.log(string.length);
+    // 存在就返回开头字符的位置，不存在就返回-1 ps空格也算
+    console.log(string.indexOf('my'));
+    //slice切面 slice()的第二个参数是可选的,如果你没有传入参数，这个分片结束位置会在原始字符串的末尾
+    console.log(string.slice(0,4));
+    console.log(string.slice(6));
+    //转换大小写
+    var radData = 'My NaMe Is MuD';
+    console.log(radData.toLowerCase());
+    console.log(radData.toUpperCase());
+    //替换字符串的某部分
+
+</script>
+</body>
+</html>

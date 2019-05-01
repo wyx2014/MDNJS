@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>var</title>
+</head>
+<body>
+    <button class="mu-btn">hello world</button>
+
+</body>
+<script>
+    var button=document.querySelector('.mu-btn');
+    button.addEventListener('click',doit);
+    function doit() {
+        var name=prompt('what is ur name?');
+        alert('hello'+name+'.nice to meet u');
+    }
+    //Array
+    var peoplenames=['wangyb','jason','alex','jk'];
+    peoplenames.forEach(item=>{
+        console.log(item);
+    });
+
+    //Object
+    var dog={name:'spot',age:'12'};
+    console.log(dog.name);
+
+    //Object
+    var peoples =[{name:'wangyb',age:'12'},{name:'jk',age:'15'},{name:'jason',age:'23'}]
+    peoples.forEach(item=>{
+        console.log(item.name+item.age);
+    });
+    //Boolean
+    var ishuman=false;
+    console.log(ishuman);
+
+    //动态类型
+    var mynumber='45';
+    console.log(typeof mynumber);
+    mynumber=34;
+    console.log(typeof mynumber);
+</script>
+</html>
