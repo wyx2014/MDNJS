@@ -6,6 +6,11 @@
 </head>
 <body>
 <a href="https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/First_steps/Strings">Strings</a>
+
+<div class="output">
+    <ul>
+    </ul>
+</div>
 <script>
 
     // 转义字符串中的字符
@@ -44,6 +49,23 @@
     console.log(radData.toLowerCase());
     console.log(radData.toUpperCase());
     //替换字符串的某部分
+    var myname ='this gay \'s name is wangyb';
+    myname = myname.replace('wangyb','jk');
+    console.log(myname);
+
+    // game start~~~~~~~~~~~~~~~~
+    let list=document.querySelector('.output ul');
+    list.innerHTML='';
+    var cities=['<a>beiJING</a>','LonDon','TAilLan','TokOy'];
+    for(let i=0;i<cities.length;i++){
+        var itemcity=cities[i].toLowerCase();
+        var realcity=itemcity.slice(0,1).toUpperCase()+itemcity.slice(1);
+        let lidom= document.createElement('li');
+        lidom.textContent=realcity;
+        list.appendChild(lidom);
+    }
+    // well done
+
 
 </script>
 </body>

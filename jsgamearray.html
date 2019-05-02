@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array</title>
+</head>
+<body>
+<script>
+    var shoppings=['bread','milk','baozi','jiaozi'];
+    var random=['tree',12,[22,3,5]];
+    // 访问数组
+    console.log(shoppings[0]);
+    //循环
+    for (let i=0;i<random.length;i++){
+        console.log(random[i]);
+    }
+    //字符串和数组之间的转化
+    var myData ='landon,liverpool,leeds,carlisle,beijing';
+    var myArray=myData.split(',');
+    for(let i=0;i<myArray.length;i++){
+        console.log(myArray[i]);
+    }
+    //first item,second item,last item
+    console.log(myArray[0]);
+    console.log(myArray[1]);
+    console.log(myArray[myArray.length-1]);
+    //数组转化为字符串
+    var newmydata=myArray.join('-');
+    console.log(newmydata);
+    console.log(myArray.toString());
+    //添加和删除数组项
+    var jkshoppings=['bread','milk','baozi','jiaozi'];
+    jkshoppings.push('chair','desk');
+    console.log(jkshoppings);
+    console.log(jkshoppings.length);
+    var removedItem=jkshoppings.pop();
+    console.log(removedItem);
+    console.log(jkshoppings);
+    //在头加元素
+    jkshoppings.unshift('tv');
+    console.log(jkshoppings);
+    jkshoppings.shift();
+    console.log(jkshoppings);
+
+</script>
+</body>
+</html>
