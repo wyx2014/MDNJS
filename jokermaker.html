@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <title>笑话生成器</title>
-    <link rel="stylesheet" href="style.css">
     <script src="ui.js" defer></script>
 </head>
 
@@ -24,6 +23,43 @@
 </div>
 
 <p class="story"></p>
+
+<script>
+    const btnrandom=document.querySelector('.randomize');
+    const me=document.getElementById('customname');
+    let p=document.querySelector('.story');
+    const names=['大老爹','怪兽威利','圣诞老人'];
+    const locations=['救助站','白宫','迪士尼乐园'];
+    const doings=['变成一条鼻涕虫爬走','在人行道化成了一坨泥','自燃了']
+    let joker='外边有34度，于是:inserta:出去遛弯。当走到:insertb:时他们被眼前的景象惊呆了,:inserta:然后就:insertc:。:insertd:全程目睹但他并没有慌，因为:inserta:是一个270斤的胖子，天气又辣么热。';
+    // let jokerE='It was 94 fahrenheit outside, so Willy the Goblin went for a walk. When they got to Disneyland, they stared in horror for a few moments, then turned into a slug ' +
+    //     'and crawled away. 猎雷 saw the whole thing, but was not surprised — Willy the Goblin weighs 300 pounds, and it was a hot day.'
+
+    btnrandom.addEventListener('click',createjoker);
+
+    function randomValueFromArray(arrays) {
+        return arrays[Math.floor(Math.random()*arrays.length)];
+    }
+
+    function createjoker() {
+
+        let newJoker=joker;
+        if (document.getElementById('cn').checked) {
+            const name=randomValueFromArray(names);
+            const location=randomValueFromArray(locations);
+            const doing=randomValueFromArray(doings);
+            //执行一次全局替换不太一样
+            newJoker = newJoker.replace(/:inserta:/g, name);
+            newJoker = newJoker.replace(':insertb:', location);
+            newJoker = newJoker.replace(':insertc:', doing);
+            newJoker = newJoker.replace(':insertd:', (me.value === '' ? '李雷' : me.value));
+            p.style.backgroundColor = 'red';
+            p.textContent = newJoker;
+        }
+
+    }
+
+</script>
 
 </body>
 </html>

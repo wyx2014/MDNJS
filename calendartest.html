@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calendar</title>
+    <style>
+
+        /*告诉浏览器去理解你设置的边框和内边距的值是包含在width内的。也就是说，如果你将一个元素的width设为100px,
+        那么这100px会包含其它的border和padding，内容区的实际宽度会是width减去border + padding的计算值。
+        大多数情况下这使得我们更容易的去设定一个元素的宽高。*/
+        .output * {
+            box-sizing: border-box;
+        }
+
+        .output ul {
+            padding: 0;
+        }
+
+        .output li {
+            display: block;
+            float: left;
+            width: 25%;
+            border: 2px solid white;
+            padding: 5px;
+            height: 40px;
+            background-color: #4A2DB6;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="output" style="height: 500px;overflow: auto;">
+<label>Select year:</label>
+<select id="year">
+    <option value="2013">2013</option>
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+</select>
+<label>Select month:</label>
+<select id="month">
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+</select>
+<h1></h1>
+<ul></ul>
+</div>
+<script>
+    const select=document.querySelector('#month');
+    const selectyear=document.querySelector('#year');
+    const h1=document.querySelector('h1');
+    const daylist=document.querySelector('ul');
+    let day=31;
+    let year='';
+    let selectMonth='';
+
+    function isRYear(year) {
+        if(year%4===0&&year%100!==0||year%400===0){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    function createCalen(year,selectMonth) {
+        if(selectMonth==='January'||selectMonth==='March'||selectMonth==='May'
+            ||selectMonth==='July'||selectMonth==='August'||selectMonth==='October'||selectMonth==='December'){
+            day=31;
+        }else if(selectMonth==='April'||selectMonth==='June'||selectMonth==='September'||selectMonth==='November'){
+            day=30;
+        }else if(selectMonth==='February'){
+            if(isRYear(Number(year))){
+                day=29;
+            }else {
+                day=28;
+            }
+        }
+
+        h1.textContent=year+'-'+selectMonth;
+        daylist.innerHTML='';
+        for(let i=1;i<=day;i++){
+            var listItem=document.createElement('li');
+            listItem.textContent=i;
+            daylist.appendChild(listItem);
+        }
+
+    }
+
+    function setMonth() {
+        selectMonth=select.value;
+        year=(year===''?'2013':year);
+
+        createCalen(year,selectMonth,day);
+
+
+    }
+
+    function setYear() {
+        year=selectyear.value;
+        selectMonth=(selectMonth===''?'January':selectMonth);
+        createCalen(year,selectMonth);
+    }
+    createCalen('2013','January');
+
+    selectyear.addEventListener('change',setYear);
+    select.addEventListener('change',setMonth);
+
+</script>
+</body>
+</html>
+
