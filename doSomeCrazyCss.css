@@ -17,7 +17,7 @@ body{
 .col{
     flex: 25%;
     padding: 10px;
-    max-width: 320px;
+    max-width: 300px;
     box-sizing: border-box;
 }
 
@@ -33,14 +33,13 @@ body{
     text-transform: uppercase;
 }
 .table ul{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 .table ul li{
-    padding: 10px 0;
     list-style: none;
+    padding: 10px 0;
 }
-
 .table ul li strong{
     margin-right: 5px;
 }
@@ -65,22 +64,22 @@ body{
     transition: 0.5s linear;
 }
 .table a:hover{
+    color:#fff;
     background: #2c3e50;
-    color: #fff;
 }
 .pop{
     background: #2c3e50;
     color: #fff;
-    transform: rotate(45deg);
-    padding: 10px 40px;
     position: absolute;
-    top: 16px;
-    right: -34px;
+    padding: 5px 40px;
+    top: 25px;
+    right: -31px;
+    transform: rotate(45deg);
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px){
     .col{
-        flex: 50%;
+        flex:50%;
     }
 }
 
