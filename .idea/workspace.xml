@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="637654d9-030d-4cd5-b593-b85266ef38b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/calendartest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doSomeCrazyCss.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doSomeCrazyThing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/first.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hundredcircle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/chat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsfunction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsgamefunhigh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsgameiffor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doCrazyCss.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jokermaker.html" beforeDir="false" afterPath="$PROJECT_DIR$/jokermaker.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,20 +16,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/doSomeCrazyThing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="29" />
+            <state relative-caret-position="105">
+              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doSomeCrazyCss.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+            <state relative-caret-position="-9">
+              <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doCrazyCss.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="80" column="23" lean-forward="true" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -87,14 +94,15 @@
         <option value="$PROJECT_DIR$/first.js" />
         <option value="$PROJECT_DIR$/second.js" />
         <option value="$PROJECT_DIR$/jsgamefunhigh.html" />
-        <option value="$PROJECT_DIR$/doSomeCrazyThing.html" />
         <option value="$PROJECT_DIR$/doSomeCrazyCss.css" />
+        <option value="$PROJECT_DIR$/doCrazyCss.css" />
+        <option value="$PROJECT_DIR$/doSomeCrazyThing.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="502" />
-    <option name="y" value="58" />
+    <option name="x" value="150" />
+    <option name="y" value="33" />
     <option name="width" value="1440" />
     <option name="height" value="806" />
   </component>
@@ -103,6 +111,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,7 +123,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,15 +162,16 @@
       <updated>1556605979234</updated>
       <workItem from="1556605982384" duration="9448000" />
       <workItem from="1556692756470" duration="4302000" />
-      <workItem from="1556769157388" duration="16479000" />
+      <workItem from="1556769157388" duration="17715000" />
+      <workItem from="1557064114578" duration="505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30229000" />
+    <option name="totallyTimeSpent" value="31970000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="640" y="115" width="1440" height="806" extended-state="0" />
+    <frame x="150" y="33" width="1440" height="806" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19379845" />
@@ -177,7 +186,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.25350142" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -264,13 +273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/second.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -295,17 +297,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doSomeCrazyThing.html">
+    <entry file="file://$PROJECT_DIR$/doCrazyCss.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="29" />
+        <state relative-caret-position="546">
+          <caret line="80" column="23" lean-forward="true" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doSomeCrazyCss.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        <state relative-caret-position="-9">
+          <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doSomeCrazyThing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
