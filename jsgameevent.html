@@ -57,6 +57,24 @@
     // myElement.addEventListener('click', functionA);
     // myElement.addEventListener('click', functionB);
     // 当元素被点击时两个函数都会工作;
+
+    // 阻止默认行为
+    //这个写个login就明了
+    // 事件冒泡及捕获
+    // video.onclick = function(e) {
+    //     e.stopPropagation();
+    //     video.play();
+    // };
+    // 事件的注册默认都是冒泡
+    // 子元素通过e.stopPropagation();，阻止父元素上的影响子元素
+
+    // 事件委托
+    // 冒泡还允许我们利用事件委托——这个概念依赖于这样一个事实,如果你想要在大量子元素中单击任何一个
+    // 都可以运行一段代码，您可以将事件监听器设置在其父节点上，并将事件监听器气泡的影响设置为每个子节点，
+    // 而不是每个子节点单独设置事件监听器。
+    //
+    // 一个很好的例子是一系列列表项，如果你想让每个列表点击时弹出一条信息，您可以将click单击事件监听器
+    // 设置在父元素<ul>上，它将会冒泡到列表项上。
 </script>
 
 </body>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Object-oriented JavaScript example</title>
+</head>
+
+<body>
+<p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+
+</body>
+
+<script>
+    var person={
+      name:['bob','jason','tom'],
+      age:32,
+        gender : 'male',
+        interests : ['music', 'skiing'],
+        bio : function() {
+            alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+        },
+        greeting: function() {
+            alert('Hi! I\'m ' + this.name[0] + '.');
+        }
+
+    };
+    // "this"的含义
+    // 你也许想知道"this"是什么，关键字"this"指向了当前代码运行时的对象
+
+    // 你一直在使用对象
+    // var temp ='ss,dw,d,wd';
+    // temp.split(',')
+    // var myNotification = new Notification('Hello!');
+    // 恭喜，你已经阅读到了我们有关JavaScript对象的第一篇文章的末尾，你现在应该对如何在JavaScript中使用对象有了很好的认识，
+    // 包括你自己创建一个简单的对象。你应该清楚对象有利于存储一些相关联的数据和函数，
+    // 如果你尝试以分开的方式去保存person对象包含的所有的属性和方法，这是令人沮丧且效率低下的，
+    // 而且会有很多的变量和函数之间同名的风险。对象使我们将一些信息安全地锁在了它们自己的包内，防止它们被损坏。
+</script>
+</html>
