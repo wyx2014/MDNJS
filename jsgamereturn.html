@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsgamereturn</title>
+</head>
+<body>
+<input class="number" type="text">
+<p></p>
+
+<script>
+    var input=document.querySelector('.number');
+    var p=document.querySelector('p');
+
+    function squared(num) {
+        return num * num;
+    }
+
+    function cuded(num) {
+        return num * num*num;
+    }
+
+    function factorial(num) {
+        var x=num;
+        if(x===0){
+            return 0;
+        }
+        while(x>1){
+            num*=x-1;
+            x--;
+        }
+        return num;
+    }
+
+    input.onchange=function () {
+        var value=input.value;
+        console.log(value);
+        if(isNaN(value)){
+            p.textContent='请输入正确的数字';
+        }else{
+            p.textContent=value +'squared is '+squared(value)+'cuded is'+cuded(value)+'factorial is'+factorial(value);
+        }
+    }
+</script>
+</body>
+</html>

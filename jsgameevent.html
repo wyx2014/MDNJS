@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsgameevent</title>
+    <style>
+        .boxs{
+            width: 1200px;
+            height: 600px;
+            background: #2196f3;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+<button class="change">
+    Change color
+</button>
+<button class="stop">
+    stop
+</button>
+<script>
+    // 将您的编程逻辑与内容分离也会使您的站点对搜索引擎更加友好
+    var btn=document.querySelector('.change');
+    var btn_stop=document.querySelector('.stop');
+    var isStarted=true;
+    function myRandom(number) {
+        return Math.floor(Math.random()*number)+1;
+    }
+
+    function changeColor() {
+        var ranCol='rgba('+myRandom(255)+','+myRandom(255)+','+myRandom(255)+')';
+        btn.style.backgroundColor=ranCol;
+    }
+
+    btn.addEventListener('click', changeColor);
+
+    function stopChangeColorEvent() {
+        if(isStarted){
+            btn.removeEventListener('click',changeColor);
+            isStarted=false;
+            btn_stop.textContent='start';
+        }else{
+            btn.addEventListener('click',changeColor);
+            isStarted=true;
+            btn_stop.textContent='stop';
+        }
+
+    }
+    btn_stop.addEventListener('click',stopChangeColorEvent);
+
+    // 您也可以给同一个监听器注册多个处理器，下面这种方式不能实现这一点：
+    // myElement.onclick = functionA;
+    // myElement.onclick = functionB;
+    //
+    // 第二行会覆盖第一行，但是下面这种方式就会正常工作了：
+    // myElement.addEventListener('click', functionA);
+    // myElement.addEventListener('click', functionB);
+    // 当元素被点击时两个函数都会工作;
+</script>
+
+</body>
+</html>
