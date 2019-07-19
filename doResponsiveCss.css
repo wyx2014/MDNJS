@@ -9,9 +9,9 @@ body{
     grid-template-rows: 50px 350px 50px;
     grid-gap: 5px;
     grid-template-areas:
-            ". h h h h h h h h h h ."
+            "h h h h h h h h h h h h"
             "m m c c c c c c c c c c"
-            ". f f f f f f f f f f .";
+            "f f f f f f f f f f f f";
 }
 
 @media screen and (max-width: 1200px){
